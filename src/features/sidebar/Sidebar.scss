@@ -1,0 +1,12 @@
+@import 'styles/variables.scss';
+
+.sidebar {
+  width: 300px;   
+  background-color: lightgreen;
+
+  &__list {
+    &-item {
+      color: darkblue;
+    }
+  }
+}
