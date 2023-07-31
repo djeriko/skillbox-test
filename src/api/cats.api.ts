@@ -7,7 +7,7 @@ export const catsApi = {
       method: "GET",
       url: "https://catfact.ninja/breeds?limit",
       params: {
-        limit: 4,
+        limit: 10,
       },
     }
 

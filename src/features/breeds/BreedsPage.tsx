@@ -1,15 +1,21 @@
-import {useBreeds} from 'hooks/useBreeds'
+import "./BreedsPage.scss"
+import { useBreeds } from "hooks/useBreeds"
 
 const BreedsPage = () => {
   const { status, breeds } = useBreeds()
 
-  if (status === 'loading') return <p>Loading...</p>
-  if (status === 'failure') return <p>Something goes wrong</p>
-  
+  if (status === "loading") return <div>Loading...</div>
+  if (status === "failure") return <div>Something goes wrong</div>
+
   return (
-    <div>
+    <div className="breeds-page">
       {breeds.map((i, index) => {
-        return <div key={'breed-'+index}>{i.breed}</div>
+        return (
+          <div key={"breed-" + index} className="breeds-page__cat">
+            <div>{i.breed}</div>
+            <div className="breeds-page__cat__country">{i.country}</div>
+          </div>
+        )
       })}
     </div>
   )

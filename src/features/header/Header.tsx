@@ -1,9 +1,14 @@
-import React from 'react'
-import './Header.scss'
+import "./Header.scss"
+import Logo from "features/logo/Logo"
+import Avatar from "features/avatar/Avatar"
 
 const Header = () => {
   return (
-    <header className="header">Header</header>
+    <header className="header">
+      <Logo />
+      <h2>Cats Everywhere</h2>
+      <Avatar />
+    </header>
   )
 }
 

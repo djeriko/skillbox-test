@@ -1,0 +1,14 @@
+.breeds-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__cat {
+    display: flex;
+    gap: 8px;
+
+    &__country {
+      color: gray;
+    }
+  }
+}
